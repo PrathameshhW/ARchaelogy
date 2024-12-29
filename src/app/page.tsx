@@ -1,11 +1,14 @@
 "use client";
-import { Button, Input } from "@nextui-org/react";
+import { Button, Form, Input } from "@nextui-org/react";
+import React from "react";
 
 export default function Home() {
   return (
-    <div className="h-screen">
-      <Input label="Email" type="email" name="email" />
-      <Button color="primary">Hello world</Button>
-    </div>
+    <Form className="h-screen" validationBehavior="native">
+      <Input isRequired label="Email" type="email" name="email" />
+      <Button color="primary" type="submit">
+        Hello world
+      </Button>
+    </Form>
   );
 }
