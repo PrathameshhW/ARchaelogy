@@ -1,8 +1,6 @@
 import type { Config } from "tailwindcss";
 const { nextui } = require("@nextui-org/react");
 
-const nextUIThemes = {};
-
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -25,6 +23,14 @@ export default {
         dark: {
           colors: {
             primary: "#f63b82",
+            buttonText: "#ffffff",
+          },
+        },
+
+        light: {
+          colors: {
+            primary: "#f63b82",
+            buttonText: "#ffffff",
           },
         },
       },
