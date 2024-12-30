@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`dark text-foreground bg-background`}>
+      <body className={``}>
         <ManContainer>{children}</ManContainer>
       </body>
     </html>
